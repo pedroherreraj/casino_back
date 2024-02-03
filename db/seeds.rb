@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+supplier = Supplier.create(name: 'Agrosuper')
+protein = ProductCategory.create(name: 'protein')
+meet = ProductSubCategory.create(name: 'meet')
+chicken = ProductSubCategory.create(name: 'chicken')
+pork = ProductSubCategory.create(name: 'pork')
+turky = ProductSubCategory.create(name: 'turky')
+
+supplier.product_categories << protein
