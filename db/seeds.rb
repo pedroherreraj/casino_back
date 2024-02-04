@@ -39,13 +39,13 @@ posta_negra = Product.where(name: 'Posta Negra').first_or_create(name: 'Posta Ne
 huachalomo = Product.where(name: 'Huachalomo').first_or_create(name: 'Huachalomo', product_sub_category: meet)
 plateada = Product.where(name: 'Plateada').first_or_create(name: 'Plateada', product_sub_category: meet)
 
-costillar_cyp = SupplierProduct.create(
+costillar_cyp = SupplierListProduct.create(
   supplier: cyp,
   product: costillar,
   price_date: '2024-01-30'.to_date,
   net_price: 4890
 )
-costillar_cyp = SupplierProduct.create(
+costillar_cyp = SupplierListProduct.create(
   supplier: icb,
   product: costillar,
   price_date: '2024-01-30'.to_date,

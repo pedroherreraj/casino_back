@@ -1,6 +1,6 @@
-class CreateSupplierProduct < ActiveRecord::Migration[7.0]
+class CreateSupplierListProducts < ActiveRecord::Migration[7.0]
   def change
-    create_table :supplier_products do |t|
+    create_table :supplier_list_products do |t|
       t.belongs_to :supplier
       t.belongs_to :product
       t.string :supplier_product_name
